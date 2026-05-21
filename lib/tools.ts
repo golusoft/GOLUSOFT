@@ -407,11 +407,11 @@ export const TOOLS: Tool[] = [
     category: category as ToolCategory,
     group: 'image' as const,
     icon: icon as LucideIcon,
-    status: 'soon' as ToolStatus,
+    status: 'working' as ToolStatus,
     faqs: commonImageFaq(title),
   })),
 
-  // ============== PDF — ALL OTHERS (placeholder pages, full SEO) ==============
+  // ============== PDF — ALL OTHERS (full implementations via UniversalToolClient) ==============
   ...([
     ['pdf-resizer', 'Smart PDF Resizer', 'Resize PDF pages to A4, Letter, Legal, or custom size.', Maximize2, 'pdf-resize'],
     ['pdf-to-png', 'PDF to PNG', 'Convert PDF pages to PNG images.', FileImage, 'pdf-convert'],
@@ -468,7 +468,7 @@ export const TOOLS: Tool[] = [
     category: category as ToolCategory,
     group: 'pdf' as const,
     icon: icon as LucideIcon,
-    status: 'soon' as ToolStatus,
+    status: 'working' as ToolStatus,
     faqs: commonPdfFaq(title),
   })),
 ];
